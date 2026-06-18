@@ -39,49 +39,83 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
 <body>
   <div class="home">
     <header id="header">
-      <div class="interface">
-        <div class="logo">
-          <a href="#pag-servicos-detalhados">
-            <img src="assets/img/logo2.png" alt="Imagem de logo" />
+      <div class="interface d-flex align-items-center justify-content-between">
+
+        <!-- LOGO -->
+        <div class="logo d-flex align-items-center">
+          <a href="#">
+            <img src="assets/img/logo2.png" alt="Imagem de logo">
           </a>
         </div>
-        <nav class="menu-desktop menu">
-          <ul>
-            <!--cria uma lista não ordenada-->
-            <li><a href="index.php#pag-index">HOME</a></li>
-            <li><a href="index.php#sobre-mim">SOBRE</a></li>
-            <li><a href="index.php#pag-diferenciais">DIFERENCIAIS</a></li>
-            <li><a href="index.php#pag-servicos">SERVIÇOS</a></li>
-            <li><a href="index.php#page-contate-me">CONTATE-ME</a></li>
+
+        <!-- MENU DESKTOP -->
+        <nav class="menu-desktop menu d-none d-lg-block">
+          <!--cria uma lista não ordenada-->
+          <ul class="list-unstyled d-flex mb-0">
+            <li class="px-4">
+              <a href="index.php#pag-index">HOME</a>
+            </li>
+
+            <li class="px-4">
+              <a href="index.php#sobre-mim">SOBRE</a>
+            </li>
+
+            <li class="px-4">
+              <a href="index.php#pag-diferenciais">DIFERENCIAIS</a>
+            </li>
+
+            <li class="px-4">
+              <a href="index.php#pag-servicos">SERVIÇOS</a>
+            </li>
+
+            <li class="px-4">
+              <a href="index.php#page-contate-me">CONTATE-ME</a>
+            </li>
           </ul>
         </nav>
 
+        <!-- BOTÃO MENU MOBILE -->
         <div class="btn-abrir-menu" id="btn-menu">
           <i class="bi bi-list"></i>
-        </div>
-        <!--btn-abrir-menu-->
 
+        </div>
+
+        <!-- MENU MOBILE -->
         <div class="menu-mobile" id="menu-mobile">
+
           <div class="btn-fechar">
             <i class="bi bi-x-lg"></i>
           </div>
+
           <nav class="menu">
-            <ul>
-              <!--cria uma lista não ordenada-->
-              <li><a href="index.php#pag-index">HOME</a></li>
-              <li><a href="index.php#sobre-mim">SOBRE</a></li>
-              <li><a href="index.php#pag-diferenciais">DIFERENCIAIS</a></li>
-              <li><a href="index.php#pag-servicos">SERVIÇOS</a></li>
-              <li><a href="index.php#page-contate-me">CONTATE-ME</a></li>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.php#pag-index">HOME</a>
+              </li>
+
+              <li>
+                <a href="index.php#sobre-mim">SOBRE</a>
+              </li>
+
+              <li>
+                <a href="index.php#pag-diferenciais">DIFERENCIAIS</a>
+              </li>
+
+              <li>
+                <a href="index.php#pag-servicos">SERVIÇOS</a>
+              </li>
+
+              <li>
+                <a href="index.php#page-contate-me">CONTATE-ME</a>
+              </li>
             </ul>
           </nav>
+
         </div>
-        <!--menu-mobile-->
-        <div class="overlay-menu" id="overlay-menu"></div>
-        <!--overlay-menu-->
+        <div class="overlay-menu" id="overlay-menu"></div><!--ANIMAÇÃO SCROLL HEADER COLOR-->
       </div>
-      <!--interface-->
     </header>
+
     <main>
       <!--BUTTON CLEAR/BLACK MODE SITE-->
       <div class="darkClear-mode" title="Deixar o site Claro/Escuro">
@@ -149,19 +183,19 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
         </label>
       </div><!--darkClear-mode-->
 
-      <section class="topo-do-site section-servicos-detalhados fundo-white-theme" id="pag-servicos-detalhados">
-        <div class="barra-pesquisa-services">
-          <div class="input-group">
+      <section class="topo-do-site section-servicos-detalhados fundo-white-theme container-fluid" id="pag-servicos-detalhados">
+        <div class="barra-pesquisa-services d-flex justify-content-center">
+          <div class="input-group-services shadow">
             <div class="input-icon">
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <input type="text" id="search" class="input-field" placeholder="Pesquisar Serviço">
           </div>
         </div>
-        <div class="container-principal">
+        <div class="container-principal container">
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao ">
                 <img src="./assets/img/img-portoes.webp" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -217,8 +251,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
             <hr class="divisor-services" />
           </div>
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao">
                 <img src="./assets/img/img-portasPortoes.webp" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -270,8 +304,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
             <hr class="divisor-services" />
           </div>
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao">
                 <img src="./assets/img/img-controleAcesso.avif" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -322,8 +356,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
             <hr class="divisor-services" />
           </div>
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao">
                 <img src="./assets/img/img-cercaEletrica.jpg" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -374,8 +408,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
             <hr class="divisor-services" />
           </div>
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao">
                 <img src="./assets/img/img-sistemaAlarme.jpg" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -426,8 +460,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
             <hr class="divisor-services" />
           </div>
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao">
                 <img src="./assets/img/img-concertina.jpg" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -478,8 +512,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
             <hr class="divisor-services" />
           </div>
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao">
                 <img src="./assets/img/img-interfone.jpg" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -529,8 +563,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
             <hr class="divisor-services" />
           </div>
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao">
                 <img src="./assets/img/img-videoPorteiro.jpg" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -581,8 +615,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
             <hr class="divisor-services" />
           </div>
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao">
                 <img src="./assets/img/img-programacao-controleRemoto.jpg" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -633,8 +667,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
             <hr class="divisor-services" />
           </div>
           <div class="conteudo-servico-interno reveal">
-            <div class="servicosDetalhados">
-              <div class="img-servico image-portao">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 image-portao">
                 <img src="./assets/img/img-instalacao-central.avif" alt="" />
               </div>
               <div class="descricao-servico titulo-servico">
@@ -687,8 +721,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
           </div>
           <!--CONTAINER SERVIÇO NAO ENCONTRADO!-->
           <div class="conteudo-servico-interno ativo" id="servico-nao-encontrado">
-            <div class="servicosDetalhados">
-              <div class="img-servico video-servico-nao-encontrado">
+            <div class="servicosDetalhados column">
+              <div class="img-servico col-lg-4 col-md-12 mb-4 video-servico-nao-encontrado">
                 <video autoplay loop muted plays-inline class="back-video">
                   <source src="./assets/videos/servicoNaoEncontrado.mp4" type="video/mp4">
                 </video>
@@ -707,6 +741,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
       <!--topo do site-->
     </main>
   </div>
+
   <section class="rodape">
     <footer>
       <div id="footer-content">
@@ -741,9 +776,9 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
           <li>
             <a href="detalhamentoServicos.php" class="footer-link">Serviços Detalhados</a>
           </li>
-          <!-- <li>
-                                <a href="detalhamentoTestemunhas.php" class="footer-link">Avaliação Clientes</a>
-                            </li> -->
+          <li>
+            <a href="detalhamentoTestemunhas.php" class="footer-link">Avaliação Clientes</a>
+          </li>
         </ul>
 
         <ul class="footer-list">
@@ -792,9 +827,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
   <script src="./assets/js/darkClear-mode-button.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./assets/js/scrollReveal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><!--BOOTSTRAP-->
+  <!-- BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
-<!-- chat para arrumar o bottsrap das paginas -->

@@ -93,8 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (email === "") {
         emailInput.classList.remove("input-error");
         errorSpan.style.display = "none";
-        buttonSubmit.disabled = false;
-        buttonSubmit.classList.remove("btn-disabled");
+        buttonSubmit.disabled = true;
+        buttonSubmit.classList.add("btn-disabled");
       } else if (emailRegex.test(email)) {
         // E-mail válido
         errorSpan.style.display = "none";
@@ -193,6 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function verificaQuantidadeText(descricao, nome) {
     if (descricao === "") {
+       errorSpanDescricao.style.display = "none";
       mensagemAvaliacaoInput.classList.remove("input-error");
       mensagemAvaliacaoInput.classList.remove("input-success");
       buttonSubmit.disabled = true;

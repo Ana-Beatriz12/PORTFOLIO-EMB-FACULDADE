@@ -296,7 +296,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                 </div>
 
                 <!--TESTE NOVO DESIGN CARDS SERVIÇOS-->
-                <div class="container swiper">
+                <div class="container-servicos swiper">
                     <div class="card-wrapper cards-servicos">
                         <div class="card-list swiper-wrapper">
                             <!-- MONTADO DINAMICAMENTE COM JSON -->
@@ -481,6 +481,9 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                             </li>
                             <li>
                                 <a href="detalhamentoServicos.php" class="footer-link">Serviços Detalhados</a>
+                            </li>
+                            <li>
+                                <a href="detalhamentoTestemunhas.php" class="footer-link">Avaliação Clientes</a>
                             </li>
                             <!-- <li>
                                 <a href="detalhamentoTestemunhas.php" class="footer-link">Avaliação Clientes</a>

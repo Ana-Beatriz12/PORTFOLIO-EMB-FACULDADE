@@ -19,7 +19,7 @@ section#pag-servicos-detalhados {
   margin-bottom: 1.45rem;
 }
 
-.input-group {
+.input-group-services {
   display: flex;
   width: 100%;
   max-width: 100%;
@@ -267,4 +267,3 @@ section#pag-servicos-detalhados {
   opacity: 1 !important;
   transform: translateY(0) !important;
 } */
-
