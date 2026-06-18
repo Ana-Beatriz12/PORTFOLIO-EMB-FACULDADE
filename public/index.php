@@ -119,7 +119,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                     </nav>
 
                 </div>
-                <div class="overlay-menu" id="overlay-menu"></div><!--ANIMAÇÃO SCROLL HEADER COLOR FUNDO-->
+                <div class="overlay-menu" id="overlay-menu"></div><!--ANIMAÇÃO SCROLL HEADER COLOR-->
             </div>
         </header>
 

@@ -24,6 +24,9 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- FIM GOOGLE FONTS -->
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!--FIM BOOTSTRAP-->
   <!--CSS-->
   <link rel="stylesheet" href="assets/css/main.css?v=<?= time(); ?>" />
   <!-- ACRESCENTANDO UM ICONE AO SITE -->
@@ -145,7 +148,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
           </div>
         </label>
       </div><!--darkClear-mode-->
-      
+
       <section class="topo-do-site section-servicos-detalhados fundo-white-theme" id="pag-servicos-detalhados">
         <div class="barra-pesquisa-services">
           <div class="input-group">
@@ -789,6 +792,9 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
   <script src="./assets/js/darkClear-mode-button.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="./assets/js/scrollReveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><!--BOOTSTRAP-->
 </body>
 
 </html>
+
+<!-- chat para arrumar o bottsrap das paginas -->
