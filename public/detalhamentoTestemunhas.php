@@ -37,50 +37,83 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
 <body>
     <div class="home">
         <header id="header">
-            <div class="interface">
-                <div class="logo">
+            <div class="interface d-flex align-items-center justify-content-between">
+
+                <!-- LOGO -->
+                <div class="logo d-flex align-items-center">
                     <a href="#">
-                        <img src="assets/img/logo2.png" alt="Imagem de logo" />
+                        <img src="assets/img/logo2.png" alt="Imagem de logo">
                     </a>
                 </div>
-                <nav class="menu-desktop menu">
-                    <ul>
-                        <!--cria uma lista não ordenada-->
-                        <li><a href="index.php#pag-index">HOME</a></li>
-                        <li><a href="index.php#sobre-mim">SOBRE</a></li>
-                        <li><a href="index.php#pag-diferenciais">DIFERENCIAIS</a></li>
-                        <li><a href="index.php#pag-servicos">SERVIÇOS</a></li>
-                        <li><a href="index.php#page-contate-me">CONTATE-ME</a></li>
+
+                <!-- MENU DESKTOP -->
+                <nav class="menu-desktop menu d-none d-lg-block">
+                    <!--cria uma lista não ordenada-->
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class="px-4">
+                            <a href="index.php#pag-index">HOME</a>
+                        </li>
+
+                        <li class="px-4">
+                            <a href="index.php#sobre-mim">SOBRE</a>
+                        </li>
+
+                        <li class="px-4">
+                            <a href="index.php#pag-diferenciais">DIFERENCIAIS</a>
+                        </li>
+
+                        <li class="px-4">
+                            <a href="index.php#pag-servicos">SERVIÇOS</a>
+                        </li>
+
+                        <li class="px-4">
+                            <a href="index.php#page-contate-me">CONTATE-ME</a>
+                        </li>
                     </ul>
                 </nav>
 
+                <!-- BOTÃO MENU MOBILE -->
                 <div class="btn-abrir-menu" id="btn-menu">
                     <i class="bi bi-list"></i>
-                </div>
-                <!--btn-abrir-menu-->
 
+                </div>
+
+                <!-- MENU MOBILE -->
                 <div class="menu-mobile" id="menu-mobile">
+
                     <div class="btn-fechar">
                         <i class="bi bi-x-lg"></i>
                     </div>
+
                     <nav class="menu">
-                        <ul>
-                            <!--cria uma lista não ordenada-->
-                            <li><a href="index.php#pag-index">HOME</a></li>
-                            <li><a href="index.php#sobre-mim">SOBRE</a></li>
-                            <li><a href="index.php#pag-diferenciais">DIFERENCIAIS</a></li>
-                            <li><a href="index.php#pag-servicos">SERVIÇOS</a></li>
-                            <li><a href="index.php#page-contate-me">CONTATE-ME</a></li>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="index.php#pag-index">HOME</a>
+                            </li>
+
+                            <li>
+                                <a href="index.php#sobre-mim">SOBRE</a>
+                            </li>
+
+                            <li>
+                                <a href="index.php#pag-diferenciais">DIFERENCIAIS</a>
+                            </li>
+
+                            <li>
+                                <a href="index.php#pag-servicos">SERVIÇOS</a>
+                            </li>
+
+                            <li>
+                                <a href="index.php#page-contate-me">CONTATE-ME</a>
+                            </li>
                         </ul>
                     </nav>
-                </div>
-                <!--menu-mobile-->
-                <div class="overlay-menu" id="overlay-menu"></div>
-                <!--overlay-menu-->
-            </div>
-            <!--interface-->
 
+                </div>
+                <div class="overlay-menu" id="overlay-menu"></div><!--ANIMAÇÃO SCROLL HEADER COLOR-->
+            </div>
         </header>
+        
         <main>
             <!--BUTTON CLEAR/BLACK MODE SITE-->
             <div class="darkClear-mode" title="Deixar o site Claro/Escuro">
@@ -147,7 +180,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                     </div>
                 </label>
             </div><!--darkClear-mode-->
-            
+
             <section
                 class="topo-do-site section-detalhamento-testemunhas"
                 id="pag-detalhamento-testemunhas">
@@ -215,7 +248,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                     </li>
                 </ul>
 
-                <div id="footer-subscribe">
+                <!-- <div id="footer-subscribe">
                     <h3>Subcribe</h3>
 
                     <p>Enter your email to get notifed about our news solutions</p>
@@ -226,7 +259,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                             <i class="fa-solid fa-envelope"></i>
                         </button>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div id="footer-copyright">
