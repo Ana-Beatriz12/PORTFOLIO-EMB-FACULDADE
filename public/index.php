@@ -20,6 +20,9 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- FIM GOOGLE FONTS -->
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--FIM BOOTSTRAP-->
     <!--SWIPER JS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -44,43 +47,80 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
 <body>
     <div class="home">
         <header id="header">
-            <div class="interface">
-                <div class="logo">
+            <div class="interface d-flex align-items-center justify-content-between">
+
+                <!-- LOGO -->
+                <div class="logo d-flex align-items-center">
                     <a href="#">
                         <img src="assets/img/logo2.png" alt="Imagem de logo">
                     </a>
                 </div>
-                <nav class="menu-desktop menu">
-                    <ul><!--cria uma lista não ordenada-->
-                        <li><a href="#pag-index">HOME</a></li>
-                        <li><a href="#sobre-mim">SOBRE</a></li>
-                        <li><a href="#pag-diferenciais">DIFERENCIAIS</a></li>
-                        <li><a href="#pag-servicos">SERVIÇOS</a></li>
-                        <li><a href="#page-contate-me">CONTATE-ME</a></li>
+
+                <!-- MENU DESKTOP -->
+                <nav class="menu-desktop menu d-none d-lg-block">
+                    <ul class="list-unstyled d-flex mb-0">
+                        <li class="px-4">
+                            <a href="#pag-index">HOME</a>
+                        </li>
+
+                        <li class="px-4">
+                            <a href="#sobre-mim">SOBRE</a>
+                        </li>
+
+                        <li class="px-4">
+                            <a href="#pag-diferenciais">DIFERENCIAIS</a>
+                        </li>
+
+                        <li class="px-4">
+                            <a href="#pag-servicos">SERVIÇOS</a>
+                        </li>
+
+                        <li class="px-4">
+                            <a href="#page-contate-me">CONTATE-ME</a>
+                        </li>
                     </ul>
                 </nav>
 
+                <!-- BOTÃO MENU MOBILE -->
                 <div class="btn-abrir-menu" id="btn-menu">
                     <i class="bi bi-list"></i>
-                </div><!--btn-abrir-menu-->
 
+                </div>
+
+                <!-- MENU MOBILE -->
                 <div class="menu-mobile" id="menu-mobile">
+
                     <div class="btn-fechar">
                         <i class="bi bi-x-lg"></i>
                     </div>
+
                     <nav class="menu">
-                        <ul><!--cria uma lista não ordenada-->
-                            <li><a href="#pag-index">HOME</a></li>
-                            <li><a href="#sobre-mim">SOBRE</a></li>
-                            <li><a href="#pag-diferenciais">DIFERENCIAIS</a></li>
-                            <li><a href="#pag-servicos">SERVIÇOS</a></li>
-                            <li><a href="#page-contate-me">CONTATE-ME</a></li>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#pag-index">HOME</a>
+                            </li>
+
+                            <li>
+                                <a href="#sobre-mim">SOBRE</a>
+                            </li>
+
+                            <li>
+                                <a href="#pag-diferenciais">DIFERENCIAIS</a>
+                            </li>
+
+                            <li>
+                                <a href="#pag-servicos">SERVIÇOS</a>
+                            </li>
+
+                            <li>
+                                <a href="#page-contate-me">CONTATE-ME</a>
+                            </li>
                         </ul>
                     </nav>
-                </div><!--menu-mobile-->
-                <div class="overlay-menu" id="overlay-menu"></div><!--overlay-menu-->
 
-            </div><!--interface-->
+                </div>
+                <div class="overlay-menu" id="overlay-menu"></div><!--ANIMAÇÃO SCROLL HEADER COLOR FUNDO-->
+            </div>
         </header>
 
         <main>
@@ -503,6 +543,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
         <script src="./assets/js/scrollReveal.js"></script>
         <!--SCRIPT JQUERY CARDS SERVIÇOS VIDEOS-->
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script><!--BOOTSTRAP-->
 
     </div>
 </body>

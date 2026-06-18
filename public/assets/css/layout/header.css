@@ -70,7 +70,7 @@ header.efeitoRolagemHeader nav a:hover {
 }
 
 header.efeitoRolagemHeader .btn-abrir-menu i{
-color: var(--color-laranja);
+color: var( --color-laranjaEscuro);
 } 
 
 
@@ -157,5 +157,5 @@ color: var(--color-laranja);
 
 /*cor do menu sanduiche sem scroll*/
 .btn-abrir-menu  i{
-  color: var(--color-laranja) ;
+  color: var( --color-laranjaEscuro) ;
 }
