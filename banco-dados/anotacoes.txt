@@ -1,0 +1,95 @@
+PARA HOSPEDAR O BANCO DE DADOS E O SITE, DA PARA USAR  A PLATAFORMA infinityFree.com e 000webhost.com conforme descrito abaixo
+
+Opa Yara! Tudo ok contigo?
+
+Nesse caso, nesse Alura+ temos um conteúdo bem legal sobre isso, mas é uma plataforma privada, contudo o passo-a-passo é bem parecido, mas vou ensinar do zero mesmo assim:
+
+Hospedar um projeto em sites gratuitos como o 000webhost e o InfinityFree geralmente envolve alguns passos básicos. Vou fornecer um guia passo a passo para cada plataforma.
+
+Hospedagem no 000webhost:
+Passo 1: Cadastro no 000webhost
+Acesse 000webhost e clique em "Comece de Graça".
+Preencha o formulário de inscrição com seu e-mail, senha e outros detalhes necessários.
+Passo 2: Confirmação de E-mail
+Verifique seu e-mail e confirme sua conta clicando no link enviado pelo 000webhost.
+Passo 3: Adicionar Site
+Após a confirmação, faça login no 000webhost.
+Clique em "Adicionar Site" e forneça um nome de domínio gratuito.
+Passo 4: Upload de Arquivos
+Utilize o gerenciador de arquivos ou um cliente FTP para enviar seus arquivos para o servidor. Certifique-se de colocar seus arquivos na pasta 'public_html' ou equivalente.
+Passo 5: Configurar Banco de Dados (Opcional)
+Se seu projeto requer um banco de dados, você pode configurá-lo através do painel do 000webhost. Geralmente, eles oferecem suporte a MySQL.
+Passo 6: Configurações do Domínio
+Configure seu domínio personalizado se necessário, seguindo as instruções do 000webhost.
+Passo 7: Conclusão
+Aguarde a propagação do DNS, que pode levar algumas horas.
+Seu site deve estar acessível após a conclusão dessas etapas.
+Hospedagem no InfinityFree:
+Passo 1: Cadastro no InfinityFree
+Acesse InfinityFree e clique em "Inscrever-se Gratuitamente".
+Preencha o formulário de inscrição com suas informações.
+Passo 2: Painel de Controle
+Faça login no painel de controle do InfinityFree.
+Clique em "Criar Nova Conta de Hospedagem" e forneça um nome de domínio gratuito.
+Passo 3: Configurar Conta
+Após a criação da conta, vá para o painel e clique em "Gerenciador de Arquivos" para fazer upload de seus arquivos.
+Passo 4: Upload de Arquivos
+Carregue seus arquivos na pasta 'htdocs' ou equivalente.
+Passo 5: Configurar Banco de Dados (Opcional)
+Se necessário, você pode configurar um banco de dados MySQL no painel.
+Passo 6: Configurar Domínio (Opcional)
+Configure seu domínio personalizado se necessário, seguindo as instruções do InfinityFree.
+Passo 7: Conclusão
+Aguarde a propagação do DNS.
+Seu site deve ser acessível após a conclusão dessas etapas.
+Lembre-se de que serviços gratuitos podem ter algumas limitações em termos de recursos e desempenho. Certifique-se de entender essas limitações ao escolher a hospedagem gratuita para seu projeto.
+
+https://www.infinityfree.com/
+
+o infinityfree parece ser o melhor de todos, más devo criar uma conexão com o banco usando mysqli!
+
+MAIS ANOTAÇOES DE IDEIAS:
+Hospedar um site que utiliza HTML, CSS, JavaScript e um banco de dados (como MySQL) envolve duas partes: hospedar os arquivos visuais (front-end) e hospedar o banco de dados (back-end). Para iniciantes, o ideal é usar plataformas gratuitas ou de baixo custo que facilitem esse processo. 
+Aqui está o passo a passo para colocar seu site no ar:
+1. Hospedagem do Front-end (HTML, CSS, JS)
+Para sites estáticos (sem necessidade de processamento no servidor), estas são as melhores opções gratuitas: 
+Vercel ou Netlify: São excelentes para iniciantes. Você pode conectar seu repositório GitHub, e eles fazem o "deploy" automático.
+GitHub Pages: Ideal para projetos simples. Você envia o código para um repositório no GitHub e ativa o Pages nas configurações.
+Tiiny.host: Muito simples, permite arrastar e soltar uma pasta ZIP com seu site para colocá-lo no ar instantaneamente. 
+2. Hospedagem do Banco de Dados e Back-end (MySQL, PHP, etc.)
+Como você usa banco de dados, precisará de uma hospedagem que suporte uma linguagem back-end (como PHP ou Node.js) para conectar o front-end ao banco. 
+InfinityFree: Oferece hospedagem gratuita com suporte a PHP e MySQL, ideal para iniciantes.
+000webhost: Uma opção popular para iniciantes aprenderem a conectar PHP/MySQL.
+Heroku: Boa opção "free" que suporta banco de dados (como MySQL ou Postgres) e Node.js/PHP.
+Neon.tech: Uma ótima opção moderna para bancos de dados PostgreSQL gratuitos (se não estiver preso ao MySQL). 
+Passo a Passo Iniciante (Exemplo com 000webhost/InfinityFree)
+Crie a conta: Cadastre-se na hospedagem escolhida (ex: InfinityFree ou 000webhost).
+Crie o banco de dados: No painel de controle, procure por "MySQL Databases". Crie um novo banco de dados, usuário e senha.
+Importe seus dados: Use o phpMyAdmin (disponível no painel) para importar seu arquivo .sql.
+Atualize sua conexão: No seu código PHP (ex: conexao.php), altere os dados de localhost para os dados fornecidos pelo servidor (host, nome do banco, usuário, senha).
+Suba os arquivos: Use o Gerenciador de Arquivos do painel ou FTP (FileZilla) para subir seus arquivos HTML, CSS, JS e PHP para a pasta public_html. 
+Resumo para Iniciantes
+Mais Fácil (Site Estático): Vercel ou GitHub Pages.
+Completo (Com Banco de Dados): InfinityFree.
+Para Praticar: XAMPP localmente, depois 000webhost. 
+Dica: Sempre garanta que seu site tem um certificado SSL (HTTPS) ativo, que a maioria dessas plataformas gratuitas oferece para garantir segurança. 
+
+
+LINK TUTORIAL DE COMO HOSPEDAR O BANCO DE DADOS NO InfinityFree
+
+https://www.youtube.com/watch?v=tHUC3foZdz8
+
+https://www.youtube.com/watch?v=MOikHhOm-hM
+
+
+https://www.youtube.com/watch?v=8hVnwyfFyyI
+
+
+
+Resumo das limitações no InfinityFree
+Banco de Dados: Apenas MySQL/MariaDB.
+Conexões Externas: Conexões para fora da rede (remotas) são restritas.
+Tamanho: Baseado em uso justo, sem limite rígido, mas com alta performance, o banco pode ser suspenso se for muito pesado.
+Upload: Limite de 10 MB por arquivo. 
+Conclusão: Para uma solução funcional e gratuita no InfinityFree, a melhor estratégia é converter seu banco de dados para MySQL/MariaDB.
+Hospedar um banco de dados Oracle no InfinityFree é difícil porque essa plataforma de hospedagem gratuita é otimizada e limitada a bancos de dados MySQL/MariaDB. O InfinityFree não suporta nativamente o banco de dados Oracle. 

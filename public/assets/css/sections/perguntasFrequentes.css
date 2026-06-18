@@ -1,0 +1,60 @@
+/*== PERGUNTAS FREQUENTES ==*/
+
+/*O ARQUIVO QUE TEM AS PROPRIEDADES DE ANIMAÇÃO DOS CARDS DE NOTÍCIAS É O noticias-page.css*/
+
+section#pag-perguntasFrequentes {
+  background-image: url(../../img/img-fundo-contato.png);
+  padding: 12rem 2.5rem;
+  min-height: 100vh;
+}
+
+.container-principal-perguntas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0rem 5rem;
+  gap: 2rem;
+}
+
+/*ESTILIZANDO OS TITULOS*/
+h1.titulo-perguntas {
+  color: var(--color-White);
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.container-principal-perguntas details summary {
+  width: 100%;
+  gap: 18px;
+  flex: 2;
+  padding: 15px;
+  background-color: var(--color-laranja);
+  border: 3px solid var(--color-White);
+
+  border-radius: 8px;
+  box-sizing: border-box;
+  /* Garante que padding e borda não aumentem a largura total */
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-White);
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.container-principal-perguntas details {
+  width: 100%;
+}
+
+.container-principal-perguntas p {
+  width: 100%;
+
+  font-size: 1.3rem;
+  color: var(--color-White);
+  background-color: var(--color-laranjaEscuro);
+  border: 3px solid var(--color-White);
+  padding: 1rem 1rem;
+}

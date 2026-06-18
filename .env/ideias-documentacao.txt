@@ -1,0 +1,40 @@
+A documentação de um projeto full stack eficaz deve incluir um arquivo README.md claro, descrição das tecnologias (stack), modelagem de banco de dados, documentação da API (Swagger/Insomnia) e instruções de instalação. Estruture com visão geral, requisitos, passos para rodar o backend e frontend, e como contribuir, utilizando Markdown. 
+YouTube
+YouTube
+ +4
+Estrutura Essencial de Documentação (README.md):
+Título e Descrição: Nome do projeto e objetivo claro (ex: "Sistema de login básico", "Aplicação CRUD").
+Tecnologias Utilizadas: Liste o stack (ex: React, Node.js, Express, MySQL/PostgreSQL/MongoDB).
+Funcionalidades: Lista do que o sistema faz (ex: cadastro, autenticação, CRUD).
+Pré-requisitos: O que precisa instalado (ex: Node, Docker, npm).
+Instalação e Execução: Comandos passo a passo para configurar e rodar o front e back.
+Documentação da API: Rotas, métodos (GET, POST), e exemplos de corpo de requisição/resposta (pode usar Postman ou Insomnia).
+Diagrama de Arquitetura (Opcional, mas recomendado): Mostrar a conexão front-back-banco. 
+YouTube
+YouTube
+ +6
+Este vídeo explica como documentar sua API e projetos usando ferramentas como o Insomnia:
+
+https://www.youtube.com/watch?v=Cdu0WJhI-d8
+
+Dicas para Melhorar a Documentação:
+Use Markdown: O formato .md no GitHub é padrão para legibilidade.
+Objetividade: Evite obviedades, foque em informações que previnam erros, como configurações de ambiente e variáveis .env.
+Imagens: Inclua prints da interface ou diagramas.
+Conteúdo do Banco: Descreva a modelagem das tabelas/coleções. 
+YouTube
+YouTube
+ +3
+
+ARTIGO :Como escrever requisitos de software de forma simples e garantir o mínimo de erros no sistema/app??
+ https://medium.com/lfdev-blog/como-escrever-requisitos-de-software-de-forma-simples-e-garantir-o-m%C3%ADnimo-de-erros-no-sistema-app-74df2ee241cc
+
+
+Documentação no desenvolvimento de software: ARTIGO STACK OVERFLOW.
+ https://pt.stackoverflow.com/questions/94146/documenta%C3%A7%C3%A3o-no-desenvolvimento-de-software#:~:text=Dicas%20para%20aprender%20documentar,no%20GitHub%20para%20refer%C3%AAncia%20futura.
+
+
+ ARTIGO DOCUMENTAR PROJETOS(
+DevCast
+Aprenda a documentar seus projetos de maneira prática e eficiente):
+ https://www.devmedia.com.br/aprenda-a-documentar-seus-projetos-de-maneira-pratica-e-eficiente/29561

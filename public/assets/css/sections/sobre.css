@@ -1,0 +1,91 @@
+/*== SESSÃO SOBRE-MIM ==*/
+
+.section-sobre {
+  background-image: url(../../img/img-fundo-quali.png);
+  height: auto;
+}
+
+/*ESTILIZANDO O CONTAINER COM FOTO SECTION SORE MIM*/
+.img-sobre {
+  width: 100%;
+  height: 45vh;
+  background-color: var(--color-laranja);
+  border: var(--color-White) 2.5px solid;
+  box-shadow: 8px 6px 1px 1px var(--color-laranjaBoxShadow-button);
+  color: var(--color-White);
+  border-radius: 10px;
+}
+
+.img-sobre img {
+  width: 100%;
+  height: 44.4vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*garante que a imagem cubra toda a área da sessão*/
+  background-position: center;
+  overflow-x: hidden;
+}
+
+section.sobre {
+  padding: 80px 4%;
+  /*deixando espaçamento para os elementos não ficarem grudados,nos cantos quando for para mobile*/
+}
+
+.sobre .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre {
+  color: var(--color-White);
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  /*diminuindo a distancia entre os títulos!*/
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.sobre .txt-sobre h2 span {
+  color: var(--color-laranja);
+  display: block;
+}
+
+.marker {
+  color: var(--color-laranja);
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+  width: 100%;
+  font-size: 20px;
+}
+
+.txt-sobre .btn-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0rem 8rem;
+}
+
+/*LINKS REDES SOCIAIS*/
+.sobre .txt-sobre .btn-social button {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-laranja);
+  font-size: 1.38rem;
+  cursor: pointer;
+  margin: 0.63rem;
+  transition: 0.5s;
+}
+
+.btn-social button:hover {
+  transform: scale(1.08);
+  box-shadow: 0rem 0rem 0.5rem var(--color-laranja);
+}

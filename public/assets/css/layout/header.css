@@ -1,0 +1,161 @@
+/*== ESTILIZAÇÃO HEADER SITE == */
+
+/* ESTILO DO CABEÇALHO */
+header {
+  padding: 12px 0;
+  /* font-family: "Karma", serif; */
+  font-weight: 700;
+  /* font-style: normal; */
+  margin: 0;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  transition: .8s;
+}
+
+/* esse > serve para ele buscar a classe .interface dentro do header */
+header>.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*deixa os elementos com um espaçamento entre eles*/
+
+}
+
+header a {
+  color: var(--color-White);
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 800;
+  font-style: normal;
+  /*tranforma o link, acrescentando as propriedades block e inline*/
+  /* transition: .2s; */
+}
+
+header nav.menu-desktop a:hover {
+  color: var(--color-Dourado);
+  text-decoration: underline;
+  /*deixa uma linha embaixo do menu, quando passa o mouse por cima*/
+}
+/* transform: scale(1.05); */
+
+.menu-desktop a {
+  transition: 0.5s ease;
+}
+
+
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav.menu-desktop li {
+  display: inline-block;
+  /*deixa os menus lado a lado*/
+  padding: 0 3rem;
+  /*dando espaçamento entre os links*/
+}
+
+/*background efeito rolagem header hover*/
+
+header.efeitoRolagemHeader {
+  background-color: var(--color-Dourado);
+  margin: 0;
+}
+
+/*mudando a cor da navegação header ao passar o mouse por cima*/
+header.efeitoRolagemHeader nav a:hover {
+  color: var(--color-laranja);
+}
+
+header.efeitoRolagemHeader .btn-abrir-menu i{
+color: var( --color-laranjaEscuro);
+} 
+
+
+.logo {
+  width: 100%;
+  max-width: 9rem;
+  height: 5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.logo img {
+  width: 100%;
+  height: 6rem;
+  align-items: start;
+  justify-content: start;
+}
+
+/*ESTILO MENU MOBILE*/
+.btn-abrir-menu{
+  display: none;
+}
+.btn-abrir-menu i {
+  color: var(--color-fundo);
+  font-size: 40px;
+}
+
+.menu-mobile {
+  background-color: var(--color-fundo);
+  height: 100vh;
+  position: fixed;
+  /*deixando o menu fixado*/
+  top: 0;
+  /*tirando as propriedades de top e rigth, para que o meu ocupe toda a tela*/
+  right: 0;
+  z-index: 99999;
+  width: 0%;
+  /*deixando o cabeçalho no canto direito da tela*/
+  overflow: hidden;
+  transition: .5s;
+}
+
+/*ESTILIZANDO A CLASSE ABRIR-MENU DO JS(index.js)*/
+.menu-mobile.abrir-menu {
+  width: 70%;
+}
+/*SEMPRE QUE A CLASSE ABRIR-MENU EXISTIR PARA O MENU-MOBILE, O NOSSO OVERLAY-MENU APARECERÁ, APLICANDO UM FUNDO MAIS ESCURO NO SITE! */
+.menu-mobile.abrir-menu ~ .overlay-menu {
+  display: block;
+}
+
+/*deixando os itens de navegação no canto direito da tela*/
+.menu-mobile nav ul {
+  text-align: right;
+}
+
+/*estilizando e posicionando os links de navegação, dando espaçamento entre eles*/
+.menu-mobile nav ul li a {
+  color: var(--color-laranja);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px 8%;
+  display: block;
+  /*faz com que ao clicar no link, a cor do background ocupe 100% do container de menu*/
+}
+
+/*adicionando efeito de hover nos links de navegação*/
+.menu-mobile nav ul li a:hover {
+  background-color: var(--color-Dourado);
+  color: var(--color-White);
+}
+
+
+
+/*ESTILIZANDO O ICONE DE FECHAR O MENU*/
+.menu-mobile .btn-fechar {
+  padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+  color: var(--color-laranja);
+  font-size: 38px;
+}
+
+/*cor do menu sanduiche sem scroll*/
+.btn-abrir-menu  i{
+  color: var( --color-laranjaEscuro) ;
+}
