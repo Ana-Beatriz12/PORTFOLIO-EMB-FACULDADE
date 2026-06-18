@@ -1,0 +1,24 @@
+/*== CSS RESETANDO O SITE ==*/
+
+/* 
+estilo geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/* deixa todos os elementos na mesma caixa */
+}
+
+html,
+body {
+  overflow-x: hidden;/*PREVINE O SCROOL HORIZONTAL*/
+  /* overflow-y: hidden; */
+}
+
+body {
+  height: auto;
+  /*era isso que estava deixando com scrool e nao deixava mostrar a section sobre!*/
+  /* background-color: var(--var-color-fundo); */
+  font-family: "Karma", serif;
+  font-weight: 700;
+  font-style: normal;
+}

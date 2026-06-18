@@ -1,0 +1,72 @@
+[33m0b41aed[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature-02[m[33m, [m[1;31morigin/feature-02[m[33m)[m Atualizado e salvo  arquivo do banco de dados de testemunhas que é o padrão
+[33mf9d6d4c[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Merge pull request #35 from Ana-Beatriz12/feature-01
+[33m5a20648[m adicionado uma verificação se a variavel existe no index.js
+[33m580965b[m Merge pull request #34 from Ana-Beatriz12/feature-01
+[33m0c41e6a[m arrumado extensão formatação com prettier
+[33maf66c96[m Merge pull request #33 from Ana-Beatriz12/feature-01
+[33m0392463[m .
+[33m3e1087a[m Merge pull request #32 from Ana-Beatriz12/feature-01
+[33m8f38d09[m Arrumado verificações dos campos de nome, email e descrição do formulário de avaliação de testemunhas
+[33ma6c013d[m Merge pull request #31 from Ana-Beatriz12/feature-01
+[33m045283f[m adicionado cor ao menu sanduiche em format mobile
+[33m21714b2[m Merge pull request #30 from Ana-Beatriz12/feature-01
+[33mc1eab4c[m feito a página de perguntas frequentes
+[33mc886ac2[m Merge pull request #29 from Ana-Beatriz12/feature-01
+[33m7f02322[m adicionado nova coluna para armazenar caminho das imagens no banco , da tabela de services
+[33mbef4f95[m começamdo página de diferenciais.html
+[33m36cb2a8[m Merge pull request #28 from Ana-Beatriz12/feature-01
+[33m9ed0309[m Merge pull request #27 from Ana-Beatriz12/feature-01
+[33m1bfc1a6[m arrumando scroll reveal na página de detalhamento servicos
+[33m61963b7[m Merge pull request #26 from Ana-Beatriz12/feature-01
+[33m115a99f[m adicionado eventos de  scroll na página detalhamentoServicos.html
+[33m82186ef[m Merge pull request #25 from Ana-Beatriz12/feature-01
+[33mf2c532a[m adicionado a biblioteca Scroll Reveal no index.php
+[33m4b3bd0b[m Merge pull request #24 from Ana-Beatriz12/feature-01
+[33md936ac9[m adicionando efeito de scroll review no site
+[33mf7dc951[m Merge pull request #23 from Ana-Beatriz12/feature-01
+[33m8a2faac[m arrumado dados página detalhaentoServicos.html
+[33m6322db9[m Merge pull request #22 from Ana-Beatriz12/feature-01
+[33m1796607[m a
+[33mdf921b9[m Merge pull request #21 from Ana-Beatriz12/feature-01
+[33m27a5652[m arrumando campo de data de testemunhas exibição cards
+[33m35a5a27[m Merge pull request #20 from Ana-Beatriz12/feature-01
+[33mc776c2d[m arrumado envio de formulário de testemunhas, tirado obrigatoriedade
+[33m4a0dbdb[m Merge pull request #19 from Ana-Beatriz12/feature-01
+[33m1defd8e[m arrumando inputs
+[33mee934b4[m Merge pull request #18 from Ana-Beatriz12/feature-01
+[33ma2271e6[m Update processaDados.php
+[33ma39b507[m Merge pull request #17 from Ana-Beatriz12/feature-01
+[33m56897e9[m arrumado requisição Json, página de detalhamento de testemunhas
+[33m027ff63[m Merge pull request #16 from Ana-Beatriz12/feature-01
+[33meb6ec1d[m arrumando api de detalhamento testemunhas
+[33m4565508[m Merge pull request #15 from Ana-Beatriz12/feature-01
+[33m6f6d253[m arrumado responsividade e testado no celular, para melhor visualização
+[33md57ed3f[m Merge pull request #14 from Ana-Beatriz12/feature-01
+[33m0abb10a[m arrumado responsividade em telas de computadores, celulares e tablets
+[33m9fe0669[m Merge pull request #13 from Ana-Beatriz12/feature-01
+[33m8b354fc[m estilizando página de detalhamento serviços
+[33m5bf083e[m Merge pull request #12 from Ana-Beatriz12/feature-01
+[33mde99ec8[m CRIANDO PÁGINA DE SERVIÇOS DETALHADOS
+[33m958189d[m Merge pull request #11 from Ana-Beatriz12/feature-01
+[33mc3cd212[m Adicionando verificações e protegendo o codigo php contra sql injection
+[33mf499c35[m Merge pull request #10 from Ana-Beatriz12/feature-01
+[33m85c8cde[m criando landingpage de serviços
+[33mca28c81[m Merge pull request #9 from Ana-Beatriz12/feature-01
+[33m5d05912[m salvando e demonstrando avaliação de estrelas
+[33m488729b[m Merge pull request #8 from Ana-Beatriz12/feature-01
+[33m3fe2aef[m alterado cor das setas de navegação e paginação dos cards de testemunhas
+[33mab009c8[m Merge pull request #7 from Ana-Beatriz12/feature-01
+[33m3d106ba[m arrumado cards de testemunhas, requisiçoes json
+[33mf2c5a0a[m Merge pull request #6 from Ana-Beatriz12/feature-01
+[33m17d5c55[m arrumando responsividade do botão sobre mim, sessão home. tamanho de tela entre 1376px e 1800px
+[33mda55a18[m Merge pull request #5 from Ana-Beatriz12/feature-01
+[33m44dfc5a[m arrumando cards testemunhas
+[33me768935[m Merge pull request #4 from Ana-Beatriz12/feature-01
+[33me922617[m conectado a requisição json, com javascript, os cards de serviços e testemunhas
+[33m4462446[m Merge pull request #3 from Ana-Beatriz12/feature-01
+[33mfcf60c5[m arrumado conexao localhost com o banco de dados
+[33m71521a0[m Merge pull request #2 from Ana-Beatriz12/feature-01
+[33m0e298c3[m arrumando nome de arquivos
+[33m13696af[m Merge pull request #1 from Ana-Beatriz12/feature-01
+[33m3939fd7[m Arrumando caminho pastas arquivos css
+[33mff7e1b3[m Initial commit

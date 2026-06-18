@@ -1,0 +1,64 @@
+/*== SESSÃO QUALIFICACOES ==*/
+
+section#pag-diferenciais {
+  padding: 12rem 2.5rem;
+  background-image: url(../../img/img-fundo-quali.png);
+  min-height: 100vh;
+  height: auto;
+  /*deixando espaçamento para os elementos não ficarem grudados,nos cantos quando for para mobile*/
+}
+
+/*DEIXANDO OS "CARDS" UM AO LADO DO OUTRO */
+.container-principal-diferenciais {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  gap: 4rem;
+}
+
+h1.titulo-diferenciais {
+  color: var(--color-White);
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.container-diferencial {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*imagens diferenciais*/
+.diferenciais-border {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  overflow: hidden;
+  padding: 2rem;
+  background-color: var(--color-laranja);
+}
+
+.diferenciais-border img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.descricao h3 {
+  color: var(--color-White);
+  padding: 1.2rem .22rem;
+  font-size: 1.3rem;
+}
+/*arrumando centralização da imagem de organização*/
+.organizacao img{
+  height: 98px !important;
+  width: 78px !important;
+  padding: 0 0 0 .12rem;
+}

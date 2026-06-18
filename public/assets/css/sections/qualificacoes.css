@@ -1,0 +1,87 @@
+/*== SESSÃO QUALIFICACOES ==*/
+
+section.qualificacoes {
+  padding: 80px 4%;
+  /*deixando espaçamento para os elementos não ficarem grudados,nos cantos quando for para mobile*/
+}
+
+.section-qualificacoes{
+  background-image: url(../../img/img-fundo-quali.png);
+  height: auto;
+}
+
+.qualificacoes .flex {
+  justify-content: center;
+  gap: 30rem;
+}
+
+/*DEIXANDO OS "CARDS" UM AO LADO DO OUTRO */
+.cards-cursos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.titulo-educacao,
+.titulo-experiencia {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--color-White);
+  width: 100%;
+}
+
+.titulo-educacao i,
+.titulo-experiencia i {
+  color: var(--color-White);
+  font-size: 4rem;
+  align-items: center;
+}
+
+.titulo-experiencia i {
+  font-size: 3rem;
+}
+
+/*ESTILIZANDO OS TITULOS E SPANS DE EDUCAÇÃO*/
+.text-names-curso-instituto,
+.data-conclusao-curso i {
+  color: var(--color-White);
+}
+
+.text-names-curso-instituto{
+  /* background-color: rgb(255, 0, 0); */
+  width: 256px;
+
+}
+
+/*ESTILIZANDO TEXT DATA CONCLUSAO CURSO*/
+.data-conclusao-curso {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 60%;
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
+
+.data-conclusao-curso p {
+  color: var(--color-laranja);
+}
+
+/* ADICIONANDO BORDA IMAGE ESTILIZACAO CONTAINER QUALIFICACOES E EXPERIÊNCIA */
+.qualificacao,
+.experiencia {
+  border: 1rem solid transparent;
+  border-image: url("/assets/img/img-container-qualificacoes.png") 30 stretch;
+  /*tirando a borda-image do canto direito do container*/
+  border-right: none;
+  background-repeat: no-repeat;
+  /*faz a imagem ocupar todo o container!*/
+  background-size: cover;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,21 @@
+/*estilizando o button*/
+.btn-contato button {
+  width: 18rem;
+  padding: 1.2rem;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--color-laranja);
+  border: var(--color-White) 2.5px solid;
+  box-shadow: 8px 6px 1px 1px var(--color-laranjaBoxShadow-button);
+  color: var(--color-White);
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  margin-bottom: 2rem;
+
+}
+
+.btn-contato button:hover {
+  transform: scale(1.01);
+  box-shadow: 0rem 0rem 0.50rem var(--color-laranja);
+}

@@ -1,0 +1,315 @@
+/*== SESSÃO CONTATE-ME*/
+
+.section-contateMe {
+    background-image: url(../../img/img-fundo-quali.png);
+    height: auto;
+    padding: 0rem 2rem;
+}
+
+/*DEIXANDO OS CARDS LADO A LADO*/
+.formas-contatos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 5rem;
+    justify-content: space-between;
+    justify-content: center;
+    /* background-color: var(--color-Dourado); */
+}
+
+.titulo-avaliacao h1 {
+    color: var(--color-laranjaEscuro);
+    font-size: 2rem;
+    /* margin-bottom: 2rem; */
+    padding-bottom: 2rem;
+    /* margin-top: -5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-contate-me h1{
+    margin-top: .75rem;
+}
+
+.redes-sociais,
+.form-opnions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    /* background-color: var(--color-laranja); */
+    padding: 23px 8%;
+}
+
+
+/*ESTILIZAÇÃO CARDS CONTATOS*/
+
+.card-redes-sociais {
+    background-color: var(--color-opacity);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: center;
+    padding: 34px;
+    border-radius: 12px;
+    align-items: center;
+    width: 400px;
+    flex: 2;
+    text-decoration: none;
+}
+
+
+.card-link:hover {
+    cursor: pointer;
+}
+
+.icons-card,
+.link-contato,
+.button-contate-me {
+    color: var(--color-laranja);
+}
+
+.button-contate-me button {
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: var(--color-laranja);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.titulo-card {
+    color: var(--color-White);
+}
+
+.link-contato a {
+    text-decoration: none;
+    color: var(--color-White);
+    word-break: break-word;/*quebra os textos em mobile, deixando responsível*/
+        overflow-wrap: break-word;/*quebra os textos em mobile, deixando responsível*/
+    max-width: 100%;
+
+}
+
+.icons-card i {
+    font-size: 2.5rem;
+}
+
+@media (max-width:700px) {
+
+    .redes-sociais,
+    .form-opnions {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .card-redes-sociais {
+        /* padding: 0; */
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/*FORMULÁRIO DEIXE SUA AVALIAÇÃO*/
+
+.input-nome input,
+.input-email input,
+.input-phone input {
+    width: 100%;
+    /*largura maxima para desktop*/
+    max-width: 100%;
+    /*400px*/
+    margin-bottom: 2rem;
+    padding: 15px;
+    background-color: var(--color-fundo);
+    /* Fundo preto */
+    /* Texto branco */
+    border: 3px solid var(--color-White);
+    /* Borda branca */
+    border-radius: 8px;
+    box-sizing: border-box;
+    /* Garante que padding e borda não aumentem a largura total */
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-White);
+}
+
+
+.input-message span {
+    color: var(--color-laranja);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/*DEIXANDO O INPUT DE MESSAGE MAIOR*/
+.input-message textarea {
+    height: 12rem;
+    width: 100%;
+    max-width: 100%;
+    /*400px*/
+    box-sizing: border-box;
+    /*incluindo padding e border na largura*/
+    min-height: 100px;
+    /* Altura mínima para não ficar minúsculo */
+    padding: 10px;
+    /* Espaçamento interno */
+    border: 3px solid var(--color-White);
+    color: var(--color-White);
+    background-color: var(--color-fundo);
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    font-size: 16px;
+    font-weight: 700;
+    /* Tamanho de fonte relativo */
+    resize: none;
+    /*para desabilitar o redimensionamento*/
+    margin-bottom: 2rem;
+}
+
+
+/* Estilo quando o input está em foco (clicado) */
+.input-nome input:focus,
+.input-email input:focus,
+.input-phone input:focus,
+.input-message textarea:focus {
+    outline: none;
+    /* Remove a borda padrão de foco do navegador */
+    border-color: var(--color-laranja);
+    /* Muda a cor da borda ao focar*/
+    color: var(--color-White);
+}
+
+/* Media query para telas menores (ex: celulares em modo paisagem ou tablets pequenos) */
+@media (max-width: 600px) {
+
+    input[type="text"],
+    .button-enviar-form {
+        padding: 12px;
+        /* Reduz o padding em telas menores */
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+/*arrumando o posicionamento do span de alert email*/
+.mensagem-verificacao-email,
+.mensagem-verificacao-nome,
+.error-message-descricao{
+    display: flex;
+    margin-top: -1.5rem;
+    padding-bottom: .45rem;
+}
+
+.error-message-descricao{
+    font-size: 1.2rem !important;
+}
+/*estilização borda vermelha input email error*/
+.input-error {
+    /* border: 3px solid red; */
+    border-color: red !important;
+    border: none;
+}
+.input-success {
+    /* border: 3px solid green; */
+    border-color: green !important;
+    border: none;
+}
+
+.btn-disabled{
+    background-color: #cccccc; /* Cor de fundo cinza */
+    color: #666666;            /* Texto escuro/acinzentado */
+    border: 1px solid #999999; /* Borda leve */
+    opacity: 0.6;              /* Reduzir a visibilidade */
+    cursor: not-allowed;       /* Cursor de 'proibido' */
+    pointer-events: none;      /* Impede interações de mouse */
+}
+
+
+/*ESTILIZANDO O BOTÃO ENVIAR FORMULÁRIO*/
+
+.button-enviar-form {
+    height: 1rem;
+    /* width: 45%; */
+    /* max-width: 45%; */
+    /*400px*/
+    box-sizing: border-box;
+    /*incluindo padding e border na largura*/
+    min-height: 55px;
+    /* Altura mínima para não ficar minúsculo */
+    padding: 10px;
+    /* Espaçamento interno */
+    border: 3px solid var(--color-White);
+    color: var(--color-White);
+    background-color: var(--color-laranja);
+    border-radius: 8px;
+    /* Bordas arredondadas */
+    font-size: 16px;
+    font-weight: 700;
+    /* Tamanho de fonte relativo */
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.button-enviar-form:hover {
+    transform: scale(1.01);
+    box-shadow: 0rem 0rem 0.50rem var(--color-laranja);
+}
+
+/*ESTILIZAÇÃO INPUT ESTRELAS AVALIAÇÃO SERVIÇO*/
+.input-estrelas {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: start;
+}
+.titulo-avaliacaoEstrelas span{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    color: var(--color-laranja);
+    width: 100%;
+    font-size: 1.22rem;
+}
+
+.input-estrelas input {
+  display: none;
+}
+
+.input-estrelas label {
+  font-size: 2.22rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+  justify-content: start;
+  align-items: start;
+  padding-left: 1rem;
+}
+
+.input-estrelas input:checked ~ label,
+.input-estrelas label:hover,
+.input-estrelas label:hover ~ label {
+  color: gold;
+}
+
+.testimonials-rate i {
+  color: #f9b707;
+}
+
+.testimonials-rate i {
+  color: #FFD700;
+}
+
+.pink,
+.footer-pink:hover{
+    color: var(--color-pink) !important;
+}
+
+.pink a{
+    text-decoration: none;
+    color: var(--color-pink);
+
+}
+

@@ -1,0 +1,90 @@
+/*== CSS GLOBAL ==*/
+
+/*padronizando as cores do site!*/
+:root {
+  --color-fundo: #1e1e1e;
+  --color-laranja: #fe6100;
+  --color-laranjaBoxShadow-button: #fe6100c1;
+  --color-White: #ffffff;
+  --color-Dourado: #caa15d;
+  --color-black: #000000;
+  --color-opacity: #353535;
+  --color-laranjaEscuro: #b74701;
+  --color-overlay: #000000a7;
+  --color-pink: #e14066;
+  --color-red: #ff0202;
+  --color-marsala: #ff020263;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*ESTILIZANDO O SCROLL DA PÁGINA*/
+/* Esconde o fundo da barra de rolagem */
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra */
+  background-color: #04091e; /* Fundo transparente */
+}
+
+/* Estiliza a parte deslizante (thumb) */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px; /* Cantos arredondados */
+  border: 12px solid #fe6100; /* Cria um "espaço" ao redor */
+  background-clip: content-box; /* Garante que o fundo não saia da borda */
+}
+
+.interface {
+  max-width: 1280px; /*deixa a largura máxima do site de 1280px*/
+  margin: 0 4em;
+}
+
+.flex {
+  display: flex;
+}
+
+/*MUDANDO A IMAGEM HOME QUANDO FOR PARA WHITE*/
+.fundo-white{
+  background-image: url(../../img/img-fundoWhite.png) !important;
+}
+
+/*ESTILIZANDO OS TITULOS*/
+h1.titulo {
+  color: var(--color-White);
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+/*ESTILIZANDO AS SESSÕES DO SITE*/
+
+section {
+  width: 100%;
+  /* height: 100dvh; */
+  /* cobre a tela inteira, incluindo o cabeçalho */
+  display: flex;
+  flex-direction: column;
+  /*img-home-pessoa*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*garante que a imagem cubra toda a área da sessão*/
+  background-position: center;
+  overflow-x: hidden; /* previne scroll lateral */
+  overflow-y: hidden;
+  background-color: var(--color-fundo);
+
+  box-shadow: none;
+}
+
+/*DEIXANDO O SITE COM UM TOM MAIS ESCURO COM OVERLAY, QUANDO O MEU É ABERTO EM MOBILE*/
+.overlay-menu {
+  background-color: var(--color-overlay);
+  width: 100%; /*fazendo ele ocupar a página inteira*/
+  height: 100%;
+  position: fixed; /*deixando ele fixo para não atrapalhar o resto das páginas*/
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+}

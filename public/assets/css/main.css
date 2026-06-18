@@ -1,0 +1,35 @@
+/* BASE */
+@import url("./base/reset.css");
+@import url("./base/variables.css");
+@import url("./base/global.css");
+
+/* LAYOUT */
+@import url("./layout/header.css");
+
+/* COMPONENTS */
+@import url("./components/buttons.css");
+@import url("./components/cards.css");
+@import url("./components/modal.css");
+@import url("./components/swiper.css");
+
+/* SECTIONS */
+@import url("./sections/home.css");
+@import url("./sections/perguntasFrequentes.css");
+@import url("./sections/sobre.css");
+@import url("./sections/qualificacoes.css");
+@import url("./sections/servicos.css");
+@import url("./sections/detalhamentoServicos.css");
+@import url("./sections/detalhamentoTestemunhas.css");
+@import url("./sections/diferenciais.css");
+@import url("./sections/testemunhas.css");
+@import url("./sections/contate-me.css");
+@import url("./layout/footer.css");
+
+/* MEDIAS QUERYS */
+@import url("./layout/mediasQuerys.css");
+
+/*SCROLL REVEAL CSS*/
+@import url("./layout/scrollReveal.css");
+
+/*BUTTON ALTERNADO ENTRE CLARO E ESCURO O SITE*/
+@import url("./layout/button-clearBlack.css");

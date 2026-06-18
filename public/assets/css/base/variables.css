@@ -1,0 +1,11 @@
+/*== VARIAVEIS DE CORES SITE ==*/
+
+/*padronizando as cores do site!*/
+:root {
+  --color-fundo: #1e1e1e;
+  --color-laranja: #fe6100;
+  --color-laranjaBoxShadow-button: #fe6100c1;
+  --color-White: #ffffff;
+  --color-Dourado: #caa15d;
+  --color-black: #000000;
+}

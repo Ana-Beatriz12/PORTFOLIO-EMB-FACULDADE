@@ -1,0 +1,342 @@
+/*== SESSAO SERVICOS ==*/
+
+.section-servicos {
+  background-image: url(../../img/img-fundo-quali.png);
+}
+
+/*TESTE CARDS VIDEOS*/
+/* .video-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px;
+} */
+
+#pag-servicos h1 {
+  margin-top: 2rem;
+}
+
+/*ESTILIZAÇÃO BUTTON MAIS SERVIÇOS*/
+
+.button-mais-servicos{
+  display: flex;
+  align-items: first baseline;/*deixa o button alinhado e na altura do texto!*/
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/*deixando o icone e o texto do button com um espaçamento!*/
+.button-mais-servicos button{
+  align-items: center;
+  gap: .8rem;
+  margin-bottom: 2rem;
+}
+
+
+/*CONTAINER VIDEO*/
+.video-thumbnail {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.video-thumbnail .thumb-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.video-thumbnail .thumb-video {
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+/*TESTE NOVO DESIGN CARDS SWIPER SERVIÇOS*/
+.swiper {
+  overflow: hidden;
+}
+
+.card-slide {
+  width: 100%;
+}
+
+.card-wrapper {
+  max-width: 1300px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+  height: 500px;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  /* width: 400px; */
+  display: block;
+  background: var(--color-White);
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(255, 123, 0, 0.05);
+  transition: 0.2s ease;
+  height: 100%;
+  max-height: 460px;
+}
+
+.card-list .card-item .card-link:active {
+  cursor: grabbing;
+  /*deixando o cursor com formato de mãozinha para puxar os cards carrossel serviços!*/
+}
+
+.card-list .card-item .card-link:hover {
+  border-color: #fe6100;
+  cursor: pointer;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  /*deixa o elemento mais responsivel (largura/altura) para um elemento, permitindo que ele redimensione dinamicamente, mantendo essa proporção, independentemente do tamanho do seu conteúdo ou do seu contexto*/
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  color: var(--color-laranja);
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: var(--color-Dourado);
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.teste1 {
+  color: var(--color-red);
+  background-color: var(--color-marsala);
+  /* box-shadow: -2px 0px 25px -6px #ff0202; */
+}
+
+.card-list .card-link .badge.teste2 {
+  color: #ff0177;
+  background-color: #ff01786c;
+  /* box-shadow: -2px 0px 25px -6px #ff0177; */
+}
+
+.card-list .card-link .badge.teste3 {
+  color: #4400ff;
+  background-color: #4400ff6c;
+  /* box-shadow: -2px 0px 25px -6px #4400ff; */
+}
+
+.card-list .card-link .badge.teste4 {
+  color: #00ffae;
+  background-color: #00ffae4e;
+  /* box-shadow: -2px 0px 25px -6px #00ffae; */
+}
+
+.card-list .card-link .badge.teste5 {
+  color: var(--color-black);
+  background-color: #00000094;
+  /* box-shadow: -2px 0px 25px -6px #000000; */
+}
+
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+/*estilizando seta de saber mais button*/
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: var(--color-laranja);
+  margin: 30px 0 5px;
+  border: 2px solid #fe6100;
+  background: none;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  transition: 0.4s ease-in-out;
+}
+
+/*estilizando efeito de hover para mudar a cor da seta*/
+.card-list .card-link:hover .card-button {
+  color: var(--color-White);
+  background: var(--color-laranja);
+  transform: rotate(-34deg);
+}
+
+.card-wrapper .swiper-pagination-bullet,
+.cards-servicos .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: var(--color-laranja);
+}
+
+.card-wrapper .swiper-pagination-bullet-active,
+.cards-servicos .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/*ESTILIANDO AS SETAS DE NAVEGAÇÃO CARROSSEL SERVIÇOS*/
+.card-wrapper .swiper-slide-button,
+.cards-servicos .swiper-slide-button {
+  color: var(--color-laranja);
+  margin-top: -35px;
+}
+
+/*deixando os textos com redicencias para manter a responsividade.*/
+.card-item .card-title {
+  margin: 0;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  /*quebrando as linhas do titulo*/
+  word-break: break-word;
+  display: -webkit-box;
+  /*faz o texto passado do container nao aparecer*/
+  -webkit-line-clamp: 3;
+  /*maximo de demosntração de linhas do titulo*/
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  /*deixando com ... se o titulo passar do container*/
+  overflow: hidden !important;
+  max-height: 460px;
+}
+
+/*ARRUMANDO A RESPONSIVIDADE DOS CARDS DE SERVIÇO PARA MOBILE E TABLETES*/
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .card-wrapper {
+    margin: 4px 10px 55px;
+    padding: 4px 0rem;
+    /*tirando o padding, o paginattion fica embaixo e não dentro do card*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .swiper,
+  .card-item {
+    /* margin: 0; */
+    width: 100%;
+  }
+
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+
+  .thumb-img,
+  .video-thumbnail {
+    width: 100%;
+  }
+
+  /*deixando os textos com redicencias para quando for mobile.*/
+  .card-item .card-title {
+    margin: 0;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    /*quebrando as linhas do titulo*/
+    word-break: break-word;
+    display: -webkit-box;
+    /*faz o texto passado do container nao aparecer*/
+    -webkit-line-clamp: 3;
+    /*maximo de demosntração de linhas do titulo*/
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    /*deixando com ... se o titulo passar do container*/
+    overflow: hidden !important;
+    max-height: 460px;
+  }
+}
+
+/*ARRUMANDO A RESPONSIVIDADE DAS SETAS DOS CARDS SERVIÇOS*/
+@media screen and (max-width: 1381px) {
+  .card-wrapper {
+    margin: 0rem 0rem 4rem 0rem;
+  }
+}
+
+/*VIDEO CARD MODAL SCREEN*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: var(--color-White);
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+/*.modal-video video*/
+.modal-video img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+#modal-title {
+  color: var(--azul-claro);
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+#modal-description {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Blur no fundo quando modal ativo */
+.servicos.modal-blur>.swiper-slide {
+  /*video-card-container*/
+  filter: blur(5px);
+  color: var(--color-laranja);
+  -webkit-filter: blur(5px);
+  pointer-events: none;
+  /* Impede interação com o fundo */
+}

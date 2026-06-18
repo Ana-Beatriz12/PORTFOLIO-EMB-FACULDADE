@@ -1,0 +1,256 @@
+/*USAR ESSE ARQUIVO DO PROJETO DE NOTICIAS COMO BASE PARA O DETALHAMENTO SERVICOS.HTML*/
+
+/*==== CSS DE NOTICIAS-NEW.PHP====*/
+:root {
+  --cor-azulEscuro: #1f5792;
+  --cor-cinzaClaro: #707070;
+}
+
+.container-noticia {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem 3rem;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+
+/*teste */
+.container-noticia::after {
+  animation: load 1s infinite;
+}
+
+/*teste */
+@keyframes load {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.separador-noticia {
+  margin: 3rem 0;
+}
+
+.img-noticia {
+  flex-shrink: 0;
+  /* Impede que a imagem encolha */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  flex-direction: column;
+  width: 24dvw;
+  /*dando uma largura e altura fixa para que a imagem nao deixe o container com proporções diferentes!*/
+  height: 16dvw;
+  overflow: hidden;
+}
+
+.img-noticia img {
+  width: 100%;
+  height: 100%;
+  /*é o heigth que controla o tamanho da largura 35vh 22dvh*/
+  object-fit: cover;
+  /*deixa a imagem ajustada a largura e altura do container!*/
+  border-radius: 0.45rem;
+}
+
+.bloco-text-noticias {
+  flex-grow: 1;
+  /*o texto ocupa o espaço restante do container*/
+
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*LIMITE DE LINHAS APRESENTADAS*/
+.bloco-text-noticias p {
+  -webkit-line-clamp: 5;
+  /* limite de linhas */
+}
+
+.autor-noticias span,
+.autor-noticias strong .categorias {
+  -webkit-line-clamp: 1 !important;
+}
+
+/*estilização autor e date noticias!*/
+.autor-noticias,
+.date-noticia {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.17rem;
+}
+
+.categorias {
+  display: none;
+}
+
+/*ESTILIZAÇÃO GERAL PARA OS PARAGRAFOS E SPANS LIMITANDO OS TEXTOS*/
+.bloco-text-noticias p,
+.autor-noticias strong:not(.categorias) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: start;
+}
+
+.link-noticia-principal:hover h2 {
+  text-decoration: underline var(--cor-azulEscuro);
+}
+
+.link-noticia-principal p,
+.link-noticia-principal span {
+  text-decoration: none;
+  color: var(--cor-cinzaClaro);
+  /*subscrevendo a cor do texto de noticia principal, para tirar a cor do link*/
+}
+
+/*ANIMAÇÃO NOTICIAS CARDS SURGIMENTO*/
+
+#containerNoticiasPage {
+  display: block;
+}
+
+.container-noticia {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 0.8s ease forwards;
+}
+
+.container-noticia:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.container-noticia:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.container-noticia:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1045px) {
+
+  .img-noticia,
+  .img-noticia img {
+    height: 40dvw;
+    width: 100%;
+  }
+
+  .container-noticia {
+    flex-direction: column;
+  }
+
+  .bloco-text-noticias,
+  .bloco-text-noticias h2 {
+    width: 100%;
+    /* font-size: 1.3rem; */
+    flex-wrap: wrap;
+  }
+
+  .bloco-text-noticias p {
+    -webkit-line-clamp: 3;
+    /* limite de linhas */
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-noticia {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 1rem 0rem;
+  }
+
+  .img-noticia,
+  .img-noticia img {
+    height: 30dvh;
+    width: 100%;
+  }
+
+  .bloco-text-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 0rem;
+  }
+
+  .bloco-text-noticias h2 {
+    font-size: 1.4rem;
+  }
+
+  .bloco-text-noticias p {
+    display: none;
+  }
+
+  .bloco-text-noticias h2,
+  .bloco-text-noticias p,
+  .autor-noticias {
+    justify-content: start;
+    text-align: start;
+    width: 100%;
+  }
+
+  .img-noticia {
+    width: 100%;
+  }
+
+  .autor-noticias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .date-noticia,
+  .categorias {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    line-heigth:100%;
+  }
+
+  .categorias {
+    display: flex;
+  }
+
+  .date-noticia {
+    gap: 0.4rem;
+  }
+
+  /*TAMANHO MÁXIMO DE LINHAS EXIBIDAS*/
+  .categorias {
+    -webkit-line-clamp: 1 !important;
+  }
+
+  /*ESTILIZAÇÃO LIMITANDO OS TEXTOS*/
+  .categorias {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: start;
+  }
+
+  .separador-noticia {
+    margin: 2rem 0 3rem 0;
+  }
+
+  .bloco-text-noticias p {
+    -webkit-line-clamp: 3;
+    /* limite de linhas */
+  }
+}

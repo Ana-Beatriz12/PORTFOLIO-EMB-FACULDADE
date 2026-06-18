@@ -1,0 +1,180 @@
+/*== SESSÃO HOME ==*/
+
+/*IMG SA SESSÃO PLANO DE FUNDO DO SITE, SEÇÃO HOME!*/
+.section-home {
+  background-image: url(../../img/img-fundo-home-2.png); /*../img/teste2.png img-fundo-home.png*/
+  height: 100dvh;
+}
+
+/*MUDANDO A IMAGEM HOME QUANDO FOR PARA WHITE*/
+.fundo-white-home{
+  background-image: url(../../img/img-fundoHome-white.png);
+}
+
+/*ESTILO DO TOPO DO SITE*/
+/*dando um espaçamento no texto e imagem da margim do site*/
+section.topo-do-site {
+  padding: 12rem 0px 0px 0%;
+  margin: 0;
+}
+
+.topo-do-site {
+  position: relative;
+}
+
+/*AJUSTANDO O CONTAINER DE BOLINHAS PARA O CANTO DIREITO DA TELA.*/
+.imgs-bolinhas {
+  position: absolute;
+  top: 12%;
+  right: 0;
+  /*o right serve para dar um espaçamento do container do canto direito da tela*/
+  width: 32em;
+  /* height: 100vh; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  pointer-events: none;
+  /*para não inteferir em cliques!*/
+
+  /* top: 0; */
+  height: 100%;
+  overflow: visible;
+}
+
+.imgs-bolinhas div {
+  position: absolute;
+  justify-content: space-between;
+  /* separa texto e imagem */
+}
+
+/*DEIXANDO CADA BOLINHA COM UMA ALTURA DIFERENTE!*/
+.bolinha1 {
+  top: 10%;
+  right: 89%;
+}
+
+.bolinha2 {
+  top: 14%;
+  right: 55%;
+}
+
+.bolinha3 {
+  top: 2%;
+  right: 8%;
+}
+
+.bolinha4 {
+  top: 32%;
+  right: 12%;
+}
+
+/*ESTILZANDO AS BOLINHAS IMGS SECTION HOME!*/
+.bolinha1 img,
+.bolinha2 img,
+.bolinha3 img,
+.bolinha4 img {
+  background-color: var(--var-White);
+  border-radius: 50%;
+  max-width: 78%;
+  animation: flutuar 6s ease-in-out infinite;
+  align-items: center;
+}
+
+/*CRAINDO A ANIMAÇÃ DAS BOLINHAS DE FLUTUAR*/
+@keyframes flutuar {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(8px, -6px);
+  }
+
+  50% {
+    transform: translate(-5px, 4px);
+  }
+
+  75% {
+    transform: translate(6px, -8px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/*APLICANDO ATRASOS PARA QUE ELAS NÃO FAÇAM O MESMOS MOVIMENTOS AO MESMO TEMPO!*/
+.bolinha1 img {
+  animation-delay: 0s;
+}
+
+.bolinha2 img {
+  animation-delay: 1.5s;
+}
+
+.bolinha3 img {
+  animation-delay: 3s;
+}
+
+.bolinha4 img {
+  animation-delay: 4.5s;
+}
+
+.bolinha1 img {
+  animation-duration: 7s;
+}
+
+.bolinha2 img {
+  animation-duration: 5.5s;
+}
+
+.bolinha3 img {
+  animation-duration: 6.8s;
+}
+
+.bolinha4 img {
+  animation-duration: 8s;
+}
+
+/*deixando o texto e a imagem centralizados horizontalmente*/
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: space-between;
+  /* separa texto e imagem */
+  gap: 40px;
+  /* diminui o espaço entre eles */
+  margin-top: 0;
+}
+
+.topo-do-site h1 {
+  color: var(--color-White);
+  font-size: 40px;
+  /* line-height: 40px;diminuindo o espaçamento entre os textos do titulo */
+  font-weight: 600;
+}
+
+/*deixando o sobrenome BROETTO coma cor laranja*/
+.topo-do-site .txt-topo-site h1 span,
+.topo-do-site .txt-topo-site p span {
+  color: var(--color-laranjaEscuro);
+}
+
+.topo-do-site .txt-topo-site h1 {
+  font-size: 4rem;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: var(--color-White);
+  margin: 40px 0;
+  font-size: 1.34rem;
+  font-weight: 600;
+  /* max-width: 60%; */
+  margin-bottom: 8rem;
+}
+
+.txt-topo-site {
+  margin-top: 5rem;
+}
+
+/*MEDIAS QUERYS*/
+

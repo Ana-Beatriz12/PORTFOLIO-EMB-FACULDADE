@@ -1,0 +1,382 @@
+/*== MEDIAS QUERYS GERAL RESPONSIVIDADE SITE==*/
+/*TAMANHO DE CELULAR(MOBILE)*/
+@media screen and (max-width: 760px) {
+
+  /*CLASSES*/
+  .flex {
+    flex-direction: column;
+  }
+
+  .section-home {
+    height: auto;
+  }
+
+  /*CABEÇALHO*/
+  .menu-desktop {
+    display: none;
+  }
+
+  .btn-abrir-menu,
+  .menu-mobile {
+    display: block;
+  }
+
+  /*TOPO DO SITE*/
+  section.topo-do-site {
+    padding: 60px 0%;
+  }
+
+  .topo-do-site .txt-topo-site h1 {
+    font-size: 45px;
+    line-height: 68px;
+  }
+
+  .txt-topo-site .broetto {
+    /* border: 3px solid #ffffff; */
+    -webkit-text-fill-color: var(--color-laranjaEscuro);
+    -webkit-text-stroke: 2px var(--color-laranjaEscuro);
+  }
+
+  /* .topo-do-site .txt-topo-site p {
+    max-width: 89%;
+  } */
+
+  /*DEIXANDO OS BOTOES DE REDES SOCIAIS NO CENTRO*/
+  .btn-social {
+    justify-content: center;
+    display: flex;
+  }
+
+  .qualificacoes .flex {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .testimonials {
+    min-height: 50dvh;
+  }
+
+  .img-sobre,
+  .img-sobre img {
+    height: 46dvh;
+  }
+
+  .img-sobre img {
+    height: 100%;
+  }
+}
+
+/*TAMANHO DE TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 1127px) {
+  .flex {
+    flex-direction: column;
+  }
+
+  /*AUMENTANDO O TAMANHO DO PARÁGRAFO DA SESSION HOME*/
+  .topo-do-site .txt-topo-site p,
+  .btn-contato button,
+  .txt-sobre {
+    font-size: 1.49rem;
+    margin: 0.89rem;
+  }
+
+  /*DEIXANDO A IMAGEM E O CONTAINER DA SESSÃO SOBRE RESPONSIVO EM TABLETS*/
+  .img-sobre {
+    height: 46dvh;
+    width: 79%;
+  }
+
+  .img-sobre img {
+    height: 100%;
+  }
+
+  /*TIRANDO O ESPAÇO ENTRE EDUCAÇÃO E EXPERIENCIA  DA SESSÃO QUALIFICAÇOES */
+  .qualificacoes .flex {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  .btn-abrir-menu,
+  .menu-mobile {
+    display: block;
+  }
+}
+
+/*ARRUMANDO PARA TAMANHO ESPECÍFICO DE COMPUTADOR!*/
+@media (max-width: 1381px) {
+
+  /*min-width:1024px*/
+  section.topo-do-site {
+    margin-top: 0rem;
+    padding: 2.2rem 0px 0px 0%;
+  }
+
+  .btn-contato button {
+    /* font-size: 2rem; */
+    margin: 2rem;
+  }
+
+  /*PÁGINA PERGUNTAS FREQUENTES*/
+  .container-principal-perguntas{
+    padding: 0rem;
+  }
+}
+
+@media screnn and (min-width: 989px) and (max-width: 1143px) {
+  header nav.menu-desktop li {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  .btn-abrir-menu,
+  .menu-mobile {
+    display: flex;
+  }
+
+
+}
+
+@media screnn and (min-width: 1380px) and (max-width:1382px) {
+  section.topo-do-site {
+    padding: 0rem 0px 0px 0%;
+    margin: 0;
+  }
+}
+
+/*MEDIA QUERY HOME PAGE.HOME*/
+/*arrumando responsividade do botão sobre mim, sessão home. tamanho de tela entre 1376px e 1382px*/
+@media screen and (min-width: 1376px) and (max-width: 1950px) {
+  section.topo-do-site {
+    padding: 8rem 0px 0px 0%;
+    margin: 0;
+  }
+
+  /* Arrumando margens do paragrafo home*/
+  .topo-do-site .txt-topo-site p {
+    margin-bottom: 2rem;
+    max-width: 89%;
+    font-size: 1.55rem;
+  }
+
+  .btn-contato {
+    margin-top: 3rem;
+    display: flex;
+  }
+
+  /*section serviços detalhados input pesquisa services(deixando o input na tela centralizado e menor)*/
+  .input-group{
+    display: flex;
+    max-width: 100%;
+    width: 80%;
+  }
+}
+
+
+/*MEDIA QUERY DETALHAMENTO SERVICOS.HTML*/
+
+@media only screen and (min-width: 769px) and (max-width: 1045px) {
+
+  .img-servico,
+  .img-servico img {
+    height: 40dvw;
+    width: 100%;
+  }
+
+  .container-principal {
+    flex-direction: column;
+  }
+
+  .descricao-servico,
+  .servicosDetalhados,
+  .conteudo-servico {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .descricao-servico p {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .descricao-servico h1,
+  .descricao-servico-fora h3 {
+    font-size: 3rem;
+  }
+
+  .descricao-servico-fora li,
+  .descricao-servico-fora p {
+    font-size: 2.4rem;
+  }
+
+
+  .btn-contato {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-contato button {
+    font-size: 2.5rem;
+    width: 100%;
+
+  }
+}
+
+@media screen and (min-width:768px) and (max-width: 820px) {
+  .container-principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 1rem 0rem;
+  }
+
+  .img-servico,
+  .img-servico img {
+    height: 30dvh;
+    width: 100%;
+  }
+
+
+  .descricao-servico,
+  .servicosDetalhados,
+  .conteudo-servico {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-servico {
+    width: 100%;
+  }
+
+  .btn-contato {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+/*celulares*/
+/*esse é o formato de tela do meu celular!*/
+@media screen and (min-width:230px) and (max-width:640px) {
+
+  /*estilização topo-site  texto home*/
+  .topo-do-site,
+  .txt-topo-site p {
+    width: 100%;
+    padding: 1rem 0rem;
+  }
+
+  .descricao-servico h1 {
+    padding: 0 0 2rem 0;
+  }
+
+  .btn-contato button {
+    margin: 0 0 2rem 0;
+    width: 100%;
+  }
+
+  .container-principal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 1rem 0rem;
+  }
+
+  .img-servico,
+  .img-servico img {
+    height: 30dvh;
+    width: 100%;
+  }
+
+
+  .descricao-servico,
+  .servicosDetalhados,
+  .conteudo-servico {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-mais-servicos {
+    gap: 0rem;
+    padding: 1rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+  }
+
+  /*deixando o icone e o texto do button com um espaçamento!*/
+  .button-mais-servicos button {
+    align-items: center;
+    gap: .8rem;
+  }
+
+  h1.titulo {
+    margin-bottom: .5rem;
+  }
+
+  /*section serviços detalhados input pesquisa services(deixando o input na tela centralizado e menor)*/
+  .input-field{
+    display: flex;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:400px) and (max-width:591px){
+  /*SECTION QUALIFIÇAÇÕES DEIXANDO CENTRALIZADOS OS ELEMENTOS NA TELA*/
+  .titulo-educacao, .titulo-experiencia {
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+  }
+
+  .text-names-curso-instituto span , .text-names-curso-instituto{
+    width: 100%;
+  }
+}
+
+/*PÁGINA DIFERENCIAIS  TAMANHO DE TELA CELULAR*/
+@media screen and (min-width:300px) and (max-width:646px) {
+  .container-diferencial{
+    width: 100%;
+  }
+  /*diminuindo o tamanho da imagem diferenciais*/
+  .diferenciais-border {
+    width: 120px;
+    height: 120px;
+  }
+  
+  /*arrumando centralização da imagem de organização*/
+  .organizacao img {
+    height: 70px !important;
+    width: 60px !important;
+    padding: 0 0 0 0rem;
+  }
+  
+}
+
+/*PÁGINA DIFERENCIAIS TAMANHO DE TELA TABLET*/
+@media screen and (min-width:648px) and (max-width:783px) {
+  .container-diferencial{
+    width: 40%;
+  }
+
+
+}
