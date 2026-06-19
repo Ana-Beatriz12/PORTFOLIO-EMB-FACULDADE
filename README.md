@@ -54,7 +54,7 @@
 
 <h4 align="left">⚙ Frameworks :  Bootstrap.</h4>
 
-<h4 align="left">⚙ Outras Ferramentas: <br> Figma;  <br>  XAMPP ; <br> JSON</h4>
+<h4 align="left">⚙ Outras Ferramentas: Figma;  XAMPP ; JSON</h4>
 
 ###
 
