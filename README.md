@@ -52,9 +52,12 @@
 
 ###
 
-<h4 align="left">⚙ Outras Ferramentas: Figma;  <br>  XAMPP ; <br> JSON</h4>
+<h4 align="left">⚙ Frameworks :  Bootstrap.</h4>
+
+<h4 align="left">⚙ Outras Ferramentas: <br> Figma;  <br>  XAMPP ; <br> JSON</h4>
 
 ###
+
 
 <h2 align="left">🚀 Tecnologias utilizadas:</h2>
 
