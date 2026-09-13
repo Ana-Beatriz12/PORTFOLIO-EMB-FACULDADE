@@ -323,7 +323,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                 </div>
 
             </section><!--servicos-->
-            <section class="testemunhas section-testemunhas" id="page-testemunhas">
+            <!-- <section class="testemunhas section-testemunhas" id="page-testemunhas">
                 <div class="testimonials">
                     <div id="testimonials_header">
                         <h1 class="titulo-avaliacoes">Avaliações</h1>
@@ -343,7 +343,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                         <div class="swiper-slide-button swiper-button-prev prev"></div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!--testemunhas-->
 
             <section class="contate-me section-contateMe fundo-white-theme" id="page-contate-me">
@@ -396,7 +396,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                             </div>
                         </a>
                     </div>
-                    <div class="form-opnions">
+                    <!-- <div class="form-opnions">
                         <div class="form-avaliacao">
                             <div class="titulo-avaliacao">
                                 <h1>Deixe sua avaliação</h1>
@@ -445,7 +445,7 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                                 </button>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -483,9 +483,9 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
                             <li>
                                 <a href="detalhamentoServicos.php" class="footer-link">Serviços Detalhados</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="detalhamentoTestemunhas.php" class="footer-link">Avaliação Clientes</a>
-                            </li>
+                            </li> -->
                             <!-- <li>
                                 <a href="detalhamentoTestemunhas.php" class="footer-link">Avaliação Clientes</a>
                             </li> -->
