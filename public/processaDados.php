@@ -1,8 +1,8 @@
 
 <?php
 session_start();
-include_once __DIR__ . '/config/conexao.php';
-// include_once __DIR__ . '/../config/conexao.php';
+// include_once __DIR__ . '/config/conexao.php';
+include_once __DIR__ . '/../config/conexao.php';
 
 //processaDados.php
 //verificando se os dados sao post
