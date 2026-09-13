@@ -3,7 +3,8 @@
 /*O ARQUIVO QUE TEM AS PROPRIEDADES DE ANIMAÇÃO DOS CARDS DE NOTÍCIAS É O noticias-page.css*/
 
 section#pag-perguntasFrequentes {
-  background-image: url(../../img/img-fundo-contato.png);
+  /* background-image: url(../../img/img-fundo-contato.png); */
+  background-color: var(--color-fundo);
   padding: 12rem 2.5rem;
   min-height: 100vh;
 }
