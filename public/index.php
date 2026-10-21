@@ -13,6 +13,8 @@ $_SESSION['csrf'] = bin2hex(random_bytes(32));
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--DESCRIÇÃO DO SITE APRESENTADA NO RESULTADO DE PESQUISA DO GOOGLE -->
+    <meta name="description" content="E.M.B Portfólio: soluções em segurança eletrônica e automação residencial e industrial, com instalação de motores para portões e vídeo porteiros.">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
